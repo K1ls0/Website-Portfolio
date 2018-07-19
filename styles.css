@@ -18,7 +18,7 @@
   --Text-secondary: #5d4711;
 }
 html {
-  background-color: var(--dBackground);
+  background-color: var(--Background);
   font-family: 'Quicksand', sans-serif;
 }
 

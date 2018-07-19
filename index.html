@@ -14,12 +14,16 @@
 
   <link rel="stylesheet" href="styles.css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="InitScripts.js">initializeListeners();</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="NightMode.js"></script>
+  <script src="InitScripts.js"></script>
+  <script>initializeListeners();</script>
 
   <title>L&P Portfolio | Home</title>
 </head>
-<body data-night-mode="true">
+<body data-night-mode="false">
   <!-- Navbar -->
   <div class="navbar">
     <div class="navtext">
@@ -27,6 +31,9 @@
       <a id="portfolio" class="deactive" href="#portfolio">PORTFOLIO</a>
       <a id="home" class="active" href="#home">HOME</a>
     </div>
+  </div>
+  <div>
+    <button type="button" id="toggleDayNight">Toggle Night-/Daymode</button>
   </div>
 
 
