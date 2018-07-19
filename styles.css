@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
+:root {
+  --main-color: #344E5C;
+  --accent: #EF3D59;
+  --other-orange: #E17A47;
+  --other-yellow: #EFC958;
+  --other-cyan: #4AB19D;
+}
+
 /* fonts */
 
 
 
 /* navbar */
 .navbar {
-  background-color: 
+  background-color: var(--main-color);
 }
