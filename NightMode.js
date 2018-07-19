@@ -7,12 +7,12 @@ let isNightMode = 0;
 function toggleNightMode() {
   console.log("Toggle Nightmode pressed");
 
-  setColors();
   if ($("body").attr("data-night-mode") === "true") {
     $("body").attr("data-night-mode", "false");
   } else {
     $("body").attr("data-night-mode", "true");
   }
+  setColors();
 }
 
 function setColors() {
