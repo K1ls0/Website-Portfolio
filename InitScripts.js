@@ -6,10 +6,10 @@ function initialize() {
 }
 
 function initializeListener() {
-  $("#toggleDayNight").on("click", toggleNightMode);
-  
+  $("#toggleDayNight").click(toggleNightMode);
+
 }
 
 function handleClickEvent() {
-  console.log("Handled Event");
+  console.log("Listener Called");
 }
