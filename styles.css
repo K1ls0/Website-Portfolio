@@ -1,18 +1,17 @@
 @charset "UTF-8";
 
 :root {
-  --nBackground: #080E1C;
+/* day mode color */
   --dBackground: #;
-
-  --nAccents: #D70026;
   --dAccents: #;
-
-  --nText-primary: #EDB82D;
   --dText-primary: #;
-  --nText-secondary: #5d4711;
   --dText-secondary: #;
-
-
+/* night mode colors */
+  --nBackground: #080E1C;
+  --nAccents: #D70026;
+  --nText-primary: #EDB82D;
+  --nText-secondary: #5d4711;
+/* colors for overwrite */
   --background: #080E1C;
   --accents: #D70026;
   --text-primary: #EDB82D;
