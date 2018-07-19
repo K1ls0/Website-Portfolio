@@ -1,22 +1,23 @@
 @charset "UTF-8";
 
-:root {
-/* day mode color */
-  --dBackground: #F8F5F2;
-  --dAccents: #EDB82D;
-  --dText-primary: #D70026;
-  --dText-secondary: #770015;
-/* night mode colors */
-  --nBackground: #080E1C;
-  --nAccents: #D70026;
-  --nText-primary: #EDB82D;
-  --nText-secondary: #5d4711;
-/* colors for overwrite */
-  --Background: #080E1C;
-  --Accents: #D70026;
-  --Text-primary: #EDB82D;
-  --Text-secondary: #5d4711;
-}
+/**:root {
+  /* day mode color/
+    --dBackground: #F8F5F2;
+    --dAccents: #EDB82D;
+    --dText-primary: #D70026;
+    --dText-secondary: #770015;
+  /* night mode colors/
+    --nBackground: #080E1C;
+    --nAccents: #D70026;
+    --nText-primary: #EDB82D;
+    --nText-secondary: #5d4711;
+   /*colors for overwrite/
+    --Background: #080E1C;
+    --Accents: #D70026;
+    --Text-primary: #EDB82D;
+    --Text-secondary: #5d4711;
+}**/
+
 html {
   background-color: var(--Background);
   font-family: 'Quicksand', sans-serif;

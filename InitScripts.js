@@ -1,7 +1,12 @@
-function initializeListeners() {
+function initialize() {
   $(document).ready(function() {
-    $("#toggleDayNight").on("click", toggleNightMode);
+    setColors();
+    initializeListener();
   });
+}
+
+function initializeListener() {
+  $("#toggleDayNight").on("click", toggleNightMode);
 }
 
 function handleClickEvent() {
