@@ -1,3 +1,3 @@
 function initializeListeners() {
-  document.getElementById("#contact").
+  $("#contact").
 }
