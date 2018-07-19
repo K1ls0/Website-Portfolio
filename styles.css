@@ -12,22 +12,17 @@ font-family: 'Quicksand', sans-serif;
   --other-orange: #E17A47;
   --other-yellow: #EFC958;
   --other-cyan: #4AB19D;
-}
-html {
-  font-family: 'Quicksand', sans-serif;
-}
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Quicksand:400,500,700&subset=latin-ext');
 
 /* navbar */
-.navbar {
+.navbar-top {
   background-color: var(--main-color);
   overflow: hidden;
 }
 .navtext {
-  margin-right: 7.5%;
+  margin-right: 10%;
 }
 .navtext a {
   float: right;
@@ -46,7 +41,7 @@ html {
   border-botom: solid 3px var(--secondary-color);
   transform: scaleX(0);
   transform-origin: 0% 50%;
-  transition: transform 500ms ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .navtext a:hover {
   color: var(--secondary-color);
