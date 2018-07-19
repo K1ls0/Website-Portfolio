@@ -2,18 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-
+<!-- meta general -->
   <meta name="description" content="Portfolio" />
   <meta name="author" content="Paul Seydel,Lorenz Resch" />
   <meta name="keywords" content="Render,Animation,Design,3D,Portfolio" />
-
+<!-- meta opengraph -->
   <meta property="og:title" content="Portfolio" />
   <meta property="og:description" content="Lorenz Resch and Paul Seydel are aspiring Designers working in 3D Rendering and Graphic Design" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="LPDesign.co" />
-
+<!-- links -->
   <link rel="stylesheet" href="styles.css" />
-
+<!-- scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
@@ -27,10 +27,12 @@
   <!-- Navbar -->
   <div class="navbar">
     <div class="navtext">
-      <a id="contact" class="deactive" href="#contact">CONTACT</a>
-      <a id="portfolio" class="deactive" href="#portfolio">PORTFOLIO</a>
-      <a id="home" class="active" href="#home">HOME</a>
+      <a id="contact" class="link" href="#contact">CONTACT</a>
+      <a id="about" class="link" href="#about">ABOUT</a>
+      <a id="portfolio" class="link" href="#portfolio">PORTFOLIO</a>
+      <a id="home" class="link active" href="/">HOME</a>
     </div>
+    <img class="icon" src="img/lp-logo.jpg" alt="icon" height="200px" />
   </div>
   <div>
     <button type="button" id="toggleDayNight">Toggle Night-/Daymode</button>
