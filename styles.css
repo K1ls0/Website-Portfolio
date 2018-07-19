@@ -2,23 +2,23 @@
 
 :root {
 /* day mode color */
-  --dBackground: #;
-  --dAccents: #;
-  --dText-primary: #;
-  --dText-secondary: #;
+  --dBackground: #F8F5F2;
+  --dAccents: #EDB82D;
+  --dText-primary: #D70026;
+  --dText-secondary: #770015;
 /* night mode colors */
   --nBackground: #080E1C;
   --nAccents: #D70026;
   --nText-primary: #EDB82D;
   --nText-secondary: #5d4711;
 /* colors for overwrite */
-  --background: #080E1C;
-  --accents: #D70026;
-  --text-primary: #EDB82D;
-  --text-secondary: #5d4711;
+  --Background: #080E1C;
+  --Accents: #D70026;
+  --Text-primary: #EDB82D;
+  --Text-secondary: #5d4711;
 }
 html {
-  background-color: var(--background);
+  background-color: var(--dBackground);
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -37,7 +37,7 @@ html {
 }
 .navtext a {
   float: right;
-  color: var(--text-primary);
+  color: var(--dText-primary);
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
@@ -46,20 +46,20 @@ html {
   transition: color 1s;
 }
 .navtext a:after {
-  color: var(--text-primary);
+  color: var(--dText-primary);
   display: block;
   content: '';
-  border-bottom: solid 3px var(--text-primary);
+  border-bottom: solid 3px var(--dText-primary);
   transform: scaleX(0);
   transform-origin: 0% 50%;
   transition: all 500ms ease-in-out;
 }
 .navtext a:hover {
-  color: var(--text-secondary);
+  color: var(--dText-secondary);
   transition: color 1s;
 }
 .navtext a:hover:after {
-  color: var(--text-secondary);
+  color: var(--dText-secondary);
   transform: scaleX(1);
   transform-origin: 0% 50%;
 }
