@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
 /**:root {
   /* day mode color/
     --dBackground: #F8F5F2;
@@ -18,16 +19,25 @@
     --Text-secondary: #5d4711;
 }**/
 
+=======
+:root {
+/* COLORS */
+  --Background: #080E1C;
+  --Accents: #D70026;
+  --Text-primary: #EDB82D;
+  --Text-secondary: #5d4711;
+}
+>>>>>>> 7448530a8a739f48802d582b99dc71cf9658ac8d
 html {
   background-color: var(--Background);
   font-family: 'Quicksand', sans-serif;
 }
 
-/* fonts */
+/* FONTS */
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&subset=latin-ext');
 
-/* navbar */
+/* NAVBAR */
 .navbar {
   background-color: transparent;
   overflow: hidden;
@@ -74,3 +84,6 @@ html {
   float: left;
   margin-left: 2%;
 }
+/* END NAVBAR */
+
+/* LANDING */
