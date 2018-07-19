@@ -1,6 +1,18 @@
 @charset "UTF-8";
 
 :root {
+  --nBackground: #080E1C;
+  --dBackground: #;
+
+  --nAccents: #D70026;
+  --dAccents: #;
+
+  --nText-primary: #EDB82D;
+  --dText-primary: #;
+  --nText-secondary: #5d4711;
+  --dText-secondary: #;
+
+
   --background: #080E1C;
   --accents: #D70026;
   --text-primary: #EDB82D;
