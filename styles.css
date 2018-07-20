@@ -17,7 +17,6 @@
     --Accents: #D70026;
     --Text-primary: #EDB82D;
     --Text-secondary: #5d4711;
-    --Btn-Text: #F8F5F2;
 }
 html {
   background-color: var(--Background);
@@ -91,7 +90,10 @@ html {
   left: 20px;
   height: 50px;
   width: 50px;
-  border-radius: 25px;
+  border-style: solid;
+  border-color: var(--Text-primary);
+  border-width: 2px;
+  border-radius: 26px;
   background-color: var(--Text-primary);
 }
 .daynightswitch:hover {
@@ -108,13 +110,6 @@ html {
 }
 .switch-label {
   cursor: pointer;
-}
-.switch-text {
-  color: var(--Background);
-  font-size: 20px;
-  font-family: 'Cabin', sans-serif;
-  font-weight: 700;
-  text-align: center;
 }
 /* END BUTTON */
 
