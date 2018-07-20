@@ -8,6 +8,7 @@ function initialize() {
 
 function initializeListener() {
   $("#toggleDayNight").click(toggleNightMode);
+  $("#contact").click(loadSubsite);
 }
 
 function handleClickEvent() {
