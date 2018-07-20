@@ -1,22 +1,24 @@
 @charset "UTF-8";
 
-/**:root {
-  /* day mode color/
+:root {
+  /* day mode color */
     --dBackground: #F8F5F2;
     --dAccents: #EDB82D;
     --dText-primary: #D70026;
     --dText-secondary: #770015;
-  /* night mode colors/
+  /* night mode colors */
     --nBackground: #080E1C;
     --nAccents: #D70026;
     --nText-primary: #EDB82D;
     --nText-secondary: #5d4711;
-   /*colors for overwrite/
+   /*colors for overwrite */
     --Background: #080E1C;
+    --AccentsDarker: #770015;
     --Accents: #D70026;
     --Text-primary: #EDB82D;
     --Text-secondary: #5d4711;
-}**/
+    --Btn-Text: #F8F5F2;
+}
 html {
   background-color: var(--Background);
   font-family: 'Quicksand', sans-serif;
@@ -69,10 +71,51 @@ html {
 .navbar .link.active:after {
   transform: scaleX(1);
 }
-.icon {
+/*.icon {
   float: left;
   margin-left: 2%;
 }
+.name {
+  color: var(--Text-primary);
+  float: left;
+  font-family: Cabin, sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+}*/
 /* END NAVBAR */
+
+/* BUTTON */
+.daynightswitch {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: var(--Text-primary);
+}
+.daynightswitch:hover {
+  background-color: var(--Text-secondary);
+  width: 150px;
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.switch-checkbox {
+  z-index: -99;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.switch-label {
+  cursor: pointer;
+}
+.switch-text {
+  color: var(--Background);
+  font-size: 20px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+/* END BUTTON */
 
 /* LANDING */
