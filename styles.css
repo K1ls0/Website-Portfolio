@@ -82,6 +82,11 @@ html {
   background-color: var(--Text-secondary);
   width: 150px;
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-align: center;
+  line-height: 50px;
+}
+.daynightswitch:hover:before {
+  content: "Overwrite Mode.";
 }
 .switch-checkbox {
   z-index: -99;
