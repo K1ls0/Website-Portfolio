@@ -19,6 +19,7 @@
   crossorigin="anonymous"></script>
   <script src="NightMode.js"></script>
   <script src="InitScripts.js"></script>
+  <script src="Subsite.js"></script>
   <script>
   initialize();
   </script>
@@ -32,7 +33,7 @@
       <a id="contact" class="link" href="#contact">CONTACT</a>
       <a id="about" class="link" href="#about">ABOUT</a>
       <a id="portfolio" class="link" href="#portfolio">PORTFOLIO</a>
-      <a id="home" class="link active" href="/">HOME</a>
+      <a id="home" class="link active" href="#home">HOME</a>
     </div>
     <img class="icon" src="img/lp-logo.jpg" alt="icon" height="200px" />
   </div>
@@ -41,6 +42,7 @@
     <button type="button" id="toggleDayNight">Toggle Night-/Daymode</button>
   </div>
   <!-- content -->
-  <div id="content"></div>
+  <div id="content" data-activesubsite="home">
+  </div>
 </body>
 </html>
