@@ -1,13 +1,3 @@
-@charset "UTF-8";
-
-html {
-  background-color: var(--Background);
-  font-family: 'Quicksand', sans-serif;
-}
-
-/* FONTS */
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&subset=latin-ext');
 
 /* NAVBAR */
 .navbar {
@@ -77,6 +67,7 @@ html {
   border-width: 2px;
   border-radius: 26px;
   background-color: var(--Text-primary);
+  content: '';
 }
 .daynightswitch:hover {
   background-color: var(--Text-secondary);
@@ -84,9 +75,6 @@ html {
   transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   text-align: center;
   line-height: 50px;
-}
-.daynightswitch:hover:before {
-  content: "Overwrite Mode.";
 }
 .switch-checkbox {
   z-index: -99;
@@ -96,6 +84,9 @@ html {
   opacity: 0;
 }
 .switch-label {
+  cursor: pointer;
+}
+.switch-span {
   cursor: pointer;
 }
 /* END BUTTON */
