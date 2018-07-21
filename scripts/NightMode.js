@@ -25,11 +25,13 @@ function setColors() {
 
 function toggleDayNightSwitch() {
   if (isNightMode === 0) {
-    $("span#switch-span.switch-span").html("Night Mode");
+    $("span#switch-span.switch-span").html("Night Mode").css("color", "white");
     $("img#icon-daynight").css("filter", "invert(100%)");
   } else {
 
-    $("span#switch-span.switch-span").html("Day Mode");
+    $("span#switch-span.switch-span").html("Day Mode").css("color", "black");
     $("img#icon-daynight").css("filter", "invert(0%)");
   }
+
+  $(".daynightswitch:hover").css("color", normalText[isNightMode]);
 }
