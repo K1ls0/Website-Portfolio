@@ -32,8 +32,11 @@ function setColors() {
 
 function toggleDayNightSwitch() {
   if (isNightMode === 0) {
-    $("div#toggleDayNight.daynightswitch").css("filter", "invert(100%)");
+    $("span#switch-span.switch-span").html("Night Mode");
+    $("img#icon-daynight").css("filter", "invert(100%)");
   } else {
-    $("div#toggleDayNight.daynightswitch").css("filter", "invert(0%)");
+
+    $("span#switch-span.switch-span").html("Day Mode");
+    $("img#icon-daynight").css("filter", "invert(0%)");
   }
 }
