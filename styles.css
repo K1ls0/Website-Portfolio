@@ -1,8 +1,8 @@
 :root {
-  --Background: #080E1C;
-  --Text-Accents: #D70026;
-  --Text-primary: #EDB82D;
-  --Text-secondary: #5d4711;
+  --Background: #677077;
+  --Text-Accents: #f2b632;
+  --Text-primary: #FFFFFF;
+  --Text-secondary: #cccccc;
 }
 
 /* NAVBAR */
@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 .navtext {
-  margin-top: 2%;
+  margin-top: 1%;
   margin-right: 7.5%;
 }
 .navtext a {
@@ -28,7 +28,7 @@
   color: var(--Text-primary);
   display: block;
   content: '';
-  border-bottom: solid 3px var(--Text-primary);
+  border-bottom: solid 3px var(--Text-Accents);
   transform: scaleX(0);
   transform-origin: 0% 50%;
   transition: all 500ms ease-in-out;

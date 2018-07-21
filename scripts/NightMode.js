@@ -1,7 +1,4 @@
-const Backgrounds = ["#F8F5F2", "#080E1C"];
-const Accents = ["#EDB82D", "#D70026"];
-const TextPrimary = ["#D70026", "#EDB82D"];
-const TextSecondary = ["#770015", "#5d4711"];
+const Backgrounds = ["#b5b5b7", "#677077"];
 let isNightMode = 0;
 
 function toggleNightMode() {
@@ -23,10 +20,6 @@ function setColors() {
   }
 
   $(":root").css("--Background", Backgrounds[isNightMode]);
-  $(":root").css("--Accents", Accents[isNightMode]);
-  $(":root").css("--Text-primary", TextPrimary[isNightMode]);
-  $(":root").css("--Text-secondary", TextSecondary[isNightMode]);
-
   toggleDayNightSwitch();
 }
 
