@@ -2,7 +2,7 @@ var subsiteContent = "";
 
 function loadSubsite() {
   let activeSubSite = $("#content").attr("data-activesubsite");
-  readFile("subsites/home.shtml");
+  readFile("./../subsites/home.shtml");
   console.log(subsiteContent);
   $("#content").html(subsiteContent);
 }
