@@ -1,30 +1,31 @@
-var subsiteContent = "";
+var cInsertText = "";
 
 //TODO
-function loadSubsite(evt) {
-  let activeSubSite = $("#" + evt.data.target).attr("data-activesubsite");
-  readFile("./../subsites/" + evt.data.target + ".shtml");
-  console.log(subsiteContent);
-  $("#content").html(subsiteContent);
-}
-
-function handleSubSites() {
+function insertExternalFiles() {
+  ($("#externalFile")).each(function() {
+    readFile($(this).attr("data-filepath"), true, this, insertToHtml);
+  })
 
 }
+
+function insertToHtml(tag, dataString) {
+  $(tag).html(dataString);
+}
+
 
 //let map = {["home", "subsites/home.shtml"]};
-function readFile(filePath) {
+function readFile(filePath, asynchronous, cTag, callback) {
   request = new XMLHttpRequest();
   request.onreadystatechange = function() {
     if (request.readyState == XMLHttpRequest.DONE) {
       if (request.status == 200) {
         //TODO add advanced splitter (Body/ Head)
-        subsiteContent = request.response;
+        callback(cTag, request.response);
       } else {
-        subsiteContent = "<h1>Error " + request.status + "; Couldn't find Subsite.</h1>";
+        callback(cTag, "<h1>Error " + request.status + "; Couldn't find Subsite.</h1>");
       }
     }
   };
-  request.open("GET", filePath, false);
+  request.open("GET", filePath, asynchronous);
   request.send();
 }
