@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-html {
+body {
+  color: white;
   background-color: var(--Background);
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif; 
 }
 
 /* FONTS */
