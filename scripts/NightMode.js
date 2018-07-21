@@ -33,5 +33,4 @@ function toggleDayNightSwitch() {
     $("img#icon-daynight").css("filter", "invert(0%)");
   }
 
-  $(".daynightswitch:hover").css("color", normalText[isNightMode]);
 }
