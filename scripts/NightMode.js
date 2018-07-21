@@ -26,4 +26,14 @@ function setColors() {
   $(":root").css("--Accents", Accents[isNightMode]);
   $(":root").css("--Text-primary", TextPrimary[isNightMode]);
   $(":root").css("--Text-secondary", TextSecondary[isNightMode]);
+
+  toggleDayNightSwitch();
+}
+
+function toggleDayNightSwitch() {
+  if (isNightMode === 0) {
+    $("div#toggleDayNight.daynightswitch").css("filter", "invert(100%)");
+  } else {
+    $("div#toggleDayNight.daynightswitch").css("filter", "invert(0%)");
+  }
 }
