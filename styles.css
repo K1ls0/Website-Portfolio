@@ -1,3 +1,9 @@
+:root {
+  --Background: #080E1C;
+  --Text-Accents: #D70026;
+  --Text-primary: #EDB82D;
+  --Text-secondary: #5d4711;
+}
 
 /* NAVBAR */
 .navbar {
@@ -76,6 +82,14 @@
   text-align: center;
   line-height: 50px;
 }
+.daynightswitch #switch-span{
+  color: transparent;
+}
+.daynightswitch:hover #switch-span{
+  color: white;
+  transition: color 0.3s;
+  transition-delay: 0.5s;
+}
 .switch-checkbox {
   z-index: -99;
   position: absolute;
@@ -88,6 +102,23 @@
 }
 .switch-span {
   cursor: pointer;
+}
+#icon-daynight {
+  height: 40px !important;
+  width: 40px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.daynightswitch #icon-daynight {
+  opacity: 100%;
+  cursor: pointer;
+  filter: invert(100%);
+}
+.daynightswitch:hover #icon-daynight {
+  opacity: 0;
+  transition: 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 /* END BUTTON */
 
