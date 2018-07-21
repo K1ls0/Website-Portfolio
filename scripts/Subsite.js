@@ -1,8 +1,9 @@
 var subsiteContent = "";
 
-function loadSubsite() {
-  let activeSubSite = $("#content").attr("data-activesubsite");
-  readFile("./../subsites/home.shtml");
+//TODO
+function loadSubsite(evt) {
+  let activeSubSite = $("#" + evt.data.target).attr("data-activesubsite");
+  readFile("./../subsites/" + evt.data.target + ".shtml");
   console.log(subsiteContent);
   $("#content").html(subsiteContent);
 }
@@ -12,7 +13,6 @@ function handleSubSites() {
 }
 
 //let map = {["home", "subsites/home.shtml"]};
-//TODO
 function readFile(filePath) {
   request = new XMLHttpRequest();
   request.onreadystatechange = function() {
@@ -24,6 +24,6 @@ function readFile(filePath) {
       }
     }
   };
-  request.open("GET", filePath, true);
+  request.open("GET", filePath, false);
   request.send();
 }
