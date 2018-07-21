@@ -18,6 +18,7 @@ function readFile(filePath) {
   request.onreadystatechange = function() {
     if (request.readyState == XMLHttpRequest.DONE) {
       if (request.status == 200) {
+        //TODO add advanced splitter (Body/ Head)
         subsiteContent = request.response;
       } else {
         subsiteContent = "<h1>Error " + request.status + "; Couldn't find Subsite.</h1>";
