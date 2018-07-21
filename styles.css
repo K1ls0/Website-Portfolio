@@ -114,7 +114,6 @@
 .daynightswitch #icon-daynight {
   opacity: 100%;
   cursor: pointer;
-  filter: invert(100%);
 }
 .daynightswitch:hover #icon-daynight {
   opacity: 0;
