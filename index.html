@@ -20,6 +20,7 @@
   crossorigin="anonymous"></script>
   <script src="scripts/InitScripts.js"></script>
   <script src="scripts/NightMode.js"></script>
+  <script src="scripts/NavbarRandomColor.js"></script>
   <script src="scripts/externalfiles.js"></script>
   <script>
   initialize();
@@ -31,21 +32,20 @@
 <body data-night-mode="true">
   <!-- Navbar -->
   <div class="navbar">
-    <div class="navtext">
-      <a id="contact" class="link" href="#contact">CONTACT</a>
-      <a id="about" class="link" href="#about">ABOUT</a>
-      <a id="portfolio" class="link" href="#portfolio">PORTFOLIO</a>
-      <a id="home" class="link active" href="#home">HOME</a>
+    <div id="RandomBorderColor" class="navtext">
+      <a id="contact" class="link" href="#contact">contact</a>
+      <a id="about" class="link" href="#about">about</a>
+      <a id="portfolio" class="link" href="#portfolio">portfolio</a>
+      <a id="home" class="link active" href="/">home</a>
     </div>
+    <img src="img/stripes.before.png" alt="logo" class="logo logo-before" />
   </div>
   <!-- button -->
   <div class="daynightswitch" id="toggleDayNight">
     <span id="switch-span" class="switch-span">Overwrite Mode</span>
     <img id="icon-daynight" src="img/daynight.svg" alt="daynighticon" />
     <input type="submit" class="switch-checkbox" id="switch-checkbox" />
-    <label class="switch-label" for="switch-checkbox">
-
-    </label>
+    <label class="switch-label" for="switch-checkbox"></label>
   </div>
   <!-- content -->
   <div id="externalFile" data-filepath="externalfiles/home.shtml">

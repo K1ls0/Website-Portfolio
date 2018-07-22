@@ -12,6 +12,7 @@ function initializeListener() {
   $("#about").click({target: "about"}, loadSubsite);
   $("#portfolio").click({target: "portfolio"}, loadSubsite);
   $("#contact").click({target: "contact"}, loadSubsite);*/
+  $("#RandomBorderColor").mouseover(ColorChanger);
 }
 
 function handleClickEvent() {

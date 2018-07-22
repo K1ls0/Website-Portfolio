@@ -1,4 +1,4 @@
-const Backgrounds = ["#b5b5b7", "#677077"];
+const Backgrounds = ["#fafafa", "#fafafa"];
 let isNightMode = 0;
 
 function toggleNightMode() {

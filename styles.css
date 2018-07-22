@@ -1,10 +1,10 @@
 :root {
-  --Background: #677077;
+  --Background: #141414;
   --Text-Accents: #f2b632;
-  --Text-primary: #FFFFFF;
+  --Text-primary: #000000;
   --Text-secondary: #cccccc;
+  --navbar: #00EFFF;
 }
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Spectral:400,500,600&subset=latin-ext');
 
 /* NAVBAR */
 .navbar {
@@ -13,23 +13,24 @@
 }
 .navtext {
   margin-top: 1%;
-  margin-right: 7.5%;
+  margin-right: 6%;
 }
 .navtext a {
   float: right;
   color: var(--Text-primary);
   text-align: center;
-  padding: 10px 20px;
+  padding: 8px 16px;
   text-decoration: none;
-  font-size: 30px;
-  font-family: 'Montserrat', serif;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
   transition: color 1s;
 }
 .navtext a:after {
   color: var(--Text-primary);
   display: block;
   content: '';
-  border-bottom: solid 3px var(--Text-Accents);
+  border-bottom: solid 5px var(--navbar);
   transform: scaleX(0);
   transform-origin: 0% 50%;
   transition: all 500ms ease-in-out;
@@ -75,6 +76,7 @@
   border-radius: 26px;
   background-color: var(--Text-primary);
   content: '';
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .daynightswitch:hover {
   background-color: var(--Background);
@@ -126,4 +128,10 @@
 }
 /* END BUTTON */
 
-/* LANDING */
+/* LOGO */
+.logo {
+  float: left;
+  height: 250px;
+  transform: translate(6%, -28%);
+}
+/* END LOGO */

@@ -6,8 +6,8 @@ body {
 }
 
 /* FONTS */
-
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Spectral:400,500,600&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500');
 /* use width:
 font-family: 'Spectral', serif;
 font-family: 'Montserrat', sans-serif;*/
